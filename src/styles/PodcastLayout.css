@@ -1,0 +1,36 @@
+.page {
+	display: flex;
+	flex-direction: row;
+}
+
+.podcast {
+	align-self: flex-start;
+	width: 200px;
+	padding: 20px;
+	box-shadow: 2px 2px 10px 2px lightgray;
+	margin: 40px 80px 40px 40px;
+}
+
+.podcast img {
+	width: 120px;
+	height: 120px;
+	display: block;
+	margin: 0 auto;
+}
+
+.podcast h1 {
+	margin-top: 2em;
+	font-size: 1.1em;
+	color: black;
+}
+
+.podcast h3 {
+	margin-top: 2em;
+	font-size: 1em;
+	color: black;
+}
+
+.podcast p {
+	font-style: italic;
+	color: gray;
+}

@@ -1,0 +1,20 @@
+.row {
+	display: flex;	
+	color: black;
+	text-decoration: none;
+	padding: 1em;
+}
+
+.row * {
+	padding: 0 1em;
+	margin: 0;
+}
+
+.row a, .header p:first-of-type {
+	flex: 1 1 0;
+}
+
+.header {
+	font-weight: bold;
+	border-bottom: thin solid black;
+}

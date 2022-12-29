@@ -1,0 +1,8 @@
+.ranking input {
+	display: block;
+}
+
+.ranking div {
+	display: flex;
+	flex-wrap: wrap;
+}

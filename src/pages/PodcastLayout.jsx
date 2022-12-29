@@ -1,6 +1,7 @@
 import { fetchPodcast } from '../api.js'
 import { Link, Outlet, useParams } from 'react-router-dom'
 import { useQuery } from 'react-query'
+import '../styles/PodcastLayout.css'
 
 const PodcastLayout = () => {
 
@@ -20,8 +21,8 @@ const PodcastLayout = () => {
 
 	// Renderizar
 	return (
-		<div>
-			<div>
+		<div className="page">
+			<div className="podcast">
 				<Link to={`/podcast/${podcast}`}>
 					<img src={image} alt=""/>
 					<h1>{title}</h1>

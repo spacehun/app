@@ -1,6 +1,7 @@
 import { fetchEpisode } from '../api.js'
 import { useParams } from 'react-router-dom'
 import { useQuery } from 'react-query'
+import '../styles/Episode.css'
 
 const Episode = () => {
 
@@ -21,7 +22,7 @@ const Episode = () => {
 
 	// Renderizar
 	return (
-		<div>
+		<div className="episode">
 			<h1>{title}</h1>
 			<p>{description}</p>
 			<audio controls>

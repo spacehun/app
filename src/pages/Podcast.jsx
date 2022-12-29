@@ -2,6 +2,7 @@ import EpisodeSummary from '../components/EpisodeSummary'
 import { fetchEpisodes } from '../api.js'
 import { useParams } from 'react-router-dom'
 import { useQuery } from 'react-query'
+import '../styles/Podcast.css'
 
 const Podcast = () => {
 
@@ -21,12 +22,12 @@ const Podcast = () => {
 
 	// Renderizar
 	const entries = data.map(({code, title, date, duration}) => (
-		<EpisodeSummary podcast={podcast} id={code} title={title} date={date} duration={duration}/>
+		<EpisodeSummary podcast={podcast} id={code} title={title} date={date} duration={duration} className="row"/>
 	))
 	return (
 		<div>
 			<p>{'Episodes: ' + data.length}</p>
-			<div>
+			<div className="row header">
 				<p>Title</p>
 				<p>Date</p>
 				<p>Duration</p>

@@ -1,6 +1,7 @@
 import PodcastSummary from '../components/PodcastSummary'
 import { fetchPodcasts } from '../api.js'
 import { useQuery } from 'react-query'
+import '../styles/Ranking.css'
 
 const Ranking = () => {
 
@@ -21,7 +22,7 @@ const Ranking = () => {
 		<PodcastSummary id={id} name={name} author={author} image={image}/>
 	))
 	return (
-		<div>
+		<div className="ranking">
 			<input type="text"/>
 			<div>
 				{entries}

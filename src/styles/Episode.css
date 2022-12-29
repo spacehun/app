@@ -1,0 +1,16 @@
+.episode {
+	padding: 40px;
+}
+
+.episode h1 {
+	font-size: 1.2em;
+}
+
+.episode p {
+	text-align: justify;
+	max-width: 100ch;
+}
+
+.episode audio {
+	width: 100%;
+}
